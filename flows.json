@@ -1,0 +1,39 @@
+[
+    {
+        "id": "42a37bdad75d03bb",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "3363febf79876737",
+        "type": "http in",
+        "z": "42a37bdad75d03bb",
+        "name": "Receive Telemetry",
+        "url": "/api/sensor",
+        "method": "post",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 310,
+        "y": 180,
+        "wires": [
+            [
+                "8e994b4d9e844221"
+            ]
+        ]
+    },
+    {
+        "id": "8e994b4d9e844221",
+        "type": "http response",
+        "z": "42a37bdad75d03bb",
+        "name": "Response",
+        "statusCode": "200",
+        "headers": {},
+        "x": 520,
+        "y": 180,
+        "wires": []
+    }
+]
